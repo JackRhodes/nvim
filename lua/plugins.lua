@@ -75,6 +75,8 @@ return require("packer").startup(function(use)
       require("trouble").setup({})
     end,
   })
+
+  use("Hoffs/omnisharp-extended-lsp.nvim")
   -- autocomplete config
   local cmp = require("cmp")
   local cmp_autopairs = require("nvim-autopairs.completion.cmp")

@@ -109,6 +109,9 @@ lsp_installer.on_server_ready(function(server)
     flags = {
       debounce_text_changes = 150,
     },
+    handlers = {
+      ["textDocument/definition"] = require("omnisharp_extended").handler,
+    },
   }
 
   server:setup(opts)
